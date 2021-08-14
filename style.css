@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    background: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h3{
+    margin: 10px 0 10px 10px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+header .toggle{
+    margin-right: 10px
+}
