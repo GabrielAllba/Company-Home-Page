@@ -7,19 +7,61 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <header>
-            <h3>company</h3>
-            <div class="toggle">
-                <span class="material-icons">
-                    view_headline
+            <div class="containers">
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>company</h1>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li>
+                                <a href="#">Mission</a>
+                            </li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <span id="close" class="material-icons">
+                            close
+                        </span>
+                    </nav>
+                    <span id="headlines" class="material-icons">
+                        view_headline
                     </span>
+                </div>
             </div>
         </header>
+
         <main>
+            <div class="container" id="mission">
+                <div class="box tittle">
+                    <h1>Digital</h1>
+                    <h1>marketing</h1>
+                    <h1>agency</h1>
+                </div>
+                <div class="box description">
+                    <div class="inner">
+                        <h3>Grow your business</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="container" id="portfolio"></div>
+            <div class="container" id="team"></div>
+            <div class="container" id="contact"></div>
         </main>
+        
         <footer>
         </footer>
+        <script src="./script.js"></script>
     </body>
 </html>
