@@ -7,6 +7,10 @@
 }
 /* header*/
 
+@font-face {
+    font-family: 'ss';
+    src: url(./font/NooplaRegular.ttf);
+}
 header{
     width: 100%;
     position: fixed;
@@ -71,7 +75,7 @@ nav{
     z-index: 5;
     width: 100%;
     height: 0vh;
-    background-color: rgba(0, 0, 0, 0.96);
+    background-color: rgba(0, 0, 0, 0.897);
     align-items: center;
     justify-content: center;
     top: 0;
@@ -164,4 +168,112 @@ main{
 #contact{
     width: 100%;
     height: 200vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, minmax(400px, 400px));
+    width: 100%;
+    grid-template-areas: 
+                    "project project project-1 project-2"
+                    "project project project-3 project-3"    
+                    "project-4 project-5 project-6 project-6"    
+                    ;
+}
+#project{
+    align-items: center;
+    justify-content: center;
+    grid-area: project;
+    background-image: url(./images/backgr.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#project h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+#project-1{
+    opacity: 1;
+    grid-area: project-1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/car-5.jpg);
+}
+#project-2{
+    grid-area: project-2;
+    background-image: url(./images/car-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-3{
+    grid-area: project-3;
+    background-image: url(./images/car-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-4{
+    grid-area: project-4;
+    background-image: url(./images/car-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-5{
+    grid-area: project-5;
+    background-image: url(./images/car-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#project-6{
+    grid-area: project-6;
+    background-image: url(./images/car-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-box{
+    display: grid;
+    position: relative;
+}
+
+.boxes{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    opacity: 0;
+}
+.boxes h1{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    cursor: pointer;
+}
+.grid-box:hover .boxes{
+    opacity: 1;
+    transition-duration: 0.3s;
 }
