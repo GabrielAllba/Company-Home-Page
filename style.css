@@ -5,6 +5,7 @@
     font-family: 'Cuprum', sans-serif;
     color: white;
 }
+
 /* header*/
 
 @font-face {
@@ -14,7 +15,7 @@
 header{
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
 }
@@ -93,11 +94,12 @@ main{
 }
 .container{
     display: flex;
-    justify-content: space-between;
 }
+/*mission section*/
 #mission{
+    justify-content: space-between;
     position: relative;
-    background-image: url(./images/bg.jpg);
+    background-image: url(./images/fixbg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,16 +172,22 @@ main{
     height: 200vh;
 }
 
+
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, minmax(400px, 400px));
     width: 100%;
+}
+
+
+/*product section*/
+#portfolio{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(400px, 400px));
     grid-template-areas: 
-                    "project project project-1 project-2"
-                    "project project project-3 project-3"    
-                    "project-4 project-5 project-6 project-6"    
-                    ;
+    "project project project-1 project-2"
+    "project project project-3 project-3"    
+    "project-4 project-5 project-6 project-6"    
+    ;
 }
 #project{
     align-items: center;
@@ -243,6 +251,7 @@ main{
 .grid-box{
     display: grid;
     position: relative;
+    cursor: pointer;
 }
 
 .boxes{
@@ -256,6 +265,7 @@ main{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.486);
     opacity: 0;
+    transition: 0.3s;
 }
 .boxes h1{
     height: 100px;
@@ -276,4 +286,112 @@ main{
 .grid-box:hover .boxes{
     opacity: 1;
     transition-duration: 0.3s;
+}
+
+
+/*team section*/
+#team{
+    width: 100%;
+    display: block;
+}
+#team .grid-container{
+    grid-template-rows: repeat(5, minmax(100px, 100px));
+    grid-template-columns: repeat(22, 1fr);
+}
+
+#banner-title h1{
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+#banner-title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    grid-area: 1 / 1 / 3 / 25;
+}
+#banner-desc{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 3 / 5 / 21;
+}
+#banner-desc p{
+    color: black;
+    line-height: 25px;
+}
+.team-box{
+    width: 100%;
+}
+#flex-outer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.flex-inner{
+    width: 20%;
+    margin: 10px;
+    display: inline-flex;
+}
+.image-box{
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: 0.3s;
+    margin-bottom: 20px ;
+}
+.image-box ul li{
+    display: inline-block;
+    color: black;
+    margin: 20px;
+}
+.image-box ul li a{
+    text-decoration: none;
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.6rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+.image-box ul{
+    display: flex;
+    height: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.image-box img{
+    margin: 10px;
+}
+.image-box:hover img{
+    transform: scale(1.3);
+}
+.image-box:hover ul{
+    height: 25%;
+    opacity: 1;
+    transition: 0.3s;
+}
+.image-box ul li:hover a{
+    background-color: rgb(206, 21, 92);
+    transition: 0.3s;
+    color: white;
 }
