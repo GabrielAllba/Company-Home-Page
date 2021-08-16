@@ -345,6 +345,39 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.person{
+    display: flex;
+    flex-direction: column;
+}
+.introduction{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    height: 100px;
+    text-align: center;
+}
+.introduction .name{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introduction .name h4{
+    font-size: 28px;
+    color: black;
+    letter-spacing: 2px;
+}
+.introduction .job{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+}
+.introduction .job h4{
+    letter-spacing: 2px;
+    color: grey;
+}
 img{
     position: relative;
     width: 100%;
@@ -390,8 +423,13 @@ img{
     opacity: 1;
     transition: 0.3s;
 }
-.image-box ul li:hover a{
-    background-color: rgb(206, 21, 92);
+.image-box ul li:hover .fa-twitter{
+    background-color: rgb(33, 185, 245);
+    transition: 0.3s;
+    color: white;
+}
+.image-box ul li:hover .fa-linkedin{
+    background-color: rgb(40, 81, 192);
     transition: 0.3s;
     color: white;
 }
