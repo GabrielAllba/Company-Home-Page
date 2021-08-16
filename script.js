@@ -9,3 +9,7 @@ open.addEventListener('click', function(){
 close.addEventListener('click', function(){
     menu.style.height = '0px'
 })
+
+function myfunction(){
+    menu.style.height = '0px'
+}
