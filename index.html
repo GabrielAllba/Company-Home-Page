@@ -9,9 +9,11 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     </head>
 
     <body>
+       
         <header>
             <div class="containers">
                 <div class="navbar">
@@ -21,13 +23,13 @@
                     <nav id="menu">
                         <ul>
                             <li>
-                                <a onclick="myfunction()" href="#mission">Mission</a>
+                                <a id="mission-hover" onclick="myfunction()" href="#mission">Mission</a>
                             </li>
                             <li>
-                                <a onclick="myfunction()" class="full-nav" href="#portfolio">Product</a>
+                                <a id="product-hover" onclick="myfunction()" class="full-nav" href="#portfolio">Product</a>
                             </li>
-                            <li><a onclick="myfunction()" class="full-nav" href="#team">Team</a></li>
-                            <li><a onclick="myfunction()" class="full-nav" href="#contact">Contact</a></li>
+                            <li><a id="team-hover" onclick="myfunction()" class="full-nav" href="#team">Team</a></li>
+                            <li><a id="contact-hover" onclick="myfunction()" class="full-nav" href="#contact">Contact</a></li>
                         </ul>
                         <span id="close" class="material-icons">
                             close
@@ -39,6 +41,8 @@
                 </div>
             </div>
         </header>
+        
+        
 
         <main>
             <div class="container" id="mission">
@@ -62,33 +66,123 @@
                     <h1>Our product</h1>
                 </div>
                 <div class="grid-box" id="project-1">
-                    <div class="boxes">
+                    <div class="boxes" id="red-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="red-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/popup-red.png" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-box" id="project-2">
-                    <div class="boxes">
+                    <div class="boxes" id="grey-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="grey-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/car-5.jpg" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-box" id="project-3">
-                    <div class="boxes">
+                    <div class="boxes" id="yellow-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="yellow-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/car-4.jpg" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-box" id="project-4">
-                    <div class="boxes">
+                    <div class="boxes" id="black-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="black-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/car-3.jpg" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-box" id="project-5">
-                    <div class="boxes">
+                    <div class="boxes" id="white-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="white-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/car-2.jpg" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="grid-box" id="project-6">
-                    <div class="boxes">
+                    <div class="boxes" id="maroon-one">
                         <h1>view details</h1>
+                    </div>
+                    <div class="details" id="maroon-pop">
+                        <div class="content">
+                            <div class="close-popup">
+                                <span class="material-icons closer">
+                                    close
+                                </span>
+                            </div>
+                            <div class="car-content">
+                                <div class="product-bg">
+                                    <img src="./images/car-1.jpg" alt="">
+                                </div>
+                                <div class="det-prod"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -188,7 +282,7 @@
             </div>
 
             <div class="container" id="contact">
-                <div class="content">
+                <div class="content-contact">
                     <h1>contact us</h1>
                     <p>Lorem upsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         temport icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -216,7 +310,7 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <h2>Address</h2>
+                                <h2>Telephone</h2>
                                 <h4>189093 Kampung Sawah Road,</h4>
                                 <h4>Bekasi, West Java,</h4>
                                 <h4>Indonesia</h4>
@@ -258,8 +352,8 @@
                     </div>
                 </div>
             </div>
-
         </main>
+
         
         <footer>
         </footer>
