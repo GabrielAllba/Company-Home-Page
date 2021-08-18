@@ -23,16 +23,7 @@ redViewButton.addEventListener('click', function(){
 })
 
 
-/* close button for popup view*/
-let closePopView = document.getElementsByClassName('close-popup')
-let alldisplay = document.getElementsByClassName('details')
-for(let i = 0; i < closePopView.length; i++){
-    closePopView[i].addEventListener('click', function(){
-        for(let x = 0; x < alldisplay.length; x++){
-            alldisplay[x].style.width = '0%'
-        }
-    })
-}
+
 
 /*grey car*/
 let greyViewButton = document.getElementById('grey-one')
@@ -70,3 +61,14 @@ let displayMaroon = document.getElementById('maroon-pop')
 maroonViewButton.addEventListener('click', function(){
     displayMaroon.style.width = '100%'
 })
+
+/* close button for popup view*/
+let closePopView = document.getElementsByClassName('close-popup')
+let alldisplay = document.getElementsByClassName('details')
+for(let i = 0; i < closePopView.length; i++){
+    closePopView[i].addEventListener('click', function(){
+        for(let x = 0; x < alldisplay.length; x++){
+            alldisplay[x].style.width = '0%'
+        }
+    })
+}

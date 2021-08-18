@@ -322,21 +322,45 @@ nav{
     width: 0%;
     height: 100vh;
     overflow: hidden;
-    z-index: 98;
+    z-index: 100;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.808);
     top: 0;
     left: 0;
     transition: 0.3s;
 }
+.blur-bg{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+}
+#blur-red{
+    background-image: url(./images/red-car/blur-bg-red.jpg);
+}
+#blur-grey{
+    background-image: url(./images/car-2.jpg);
+}
+#blur-yellow{
+    background-image: url(./images/car-4.jpg);
+}
+#blur-black{
+    background-image: url(./images/car-3.jpg);
+}
+#blur-white{
+    background-image: url(./images/car-1.jpg);
+}
+#blur-red-two{
+    background-image: url(./images/red-car/blur-bg-red.jpg);
+}
 .content{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    border-radius: 30px;
     width: 90%;
     height: 80%;
-    background-color: rgb(255, 255, 255);
+    position: absolute;
 }
 .close-popup{
     width: 100%;
@@ -347,8 +371,7 @@ nav{
 }
 .closer{
     background-color: rgb(0, 0, 0);
-    padding: 10px;
-    font-size: 10px;
+    padding: 1px;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -356,39 +379,121 @@ nav{
     display: flex;
     width: 100%;
     height: 90%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
 .product-bg{
     padding: 10px;
     display: flex;
     align-items: center;
     width: 50%;
+    position: relative;
     max-height: 100%;
 }
+
 .product-bg img{
     min-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 .det-prod{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     width: 50%;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.prod-title, .prod-spec, .prod-price{
+    display: flex;
+    letter-spacing: 3px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    padding-left: 10px;
 }
 
+.prod-title h1{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.prod-title h4{
+    font-size: 20px;
+    color: rgb(54, 54, 54);
+}
+.prod-title h5{
+    font-size: 12px;
+    color: rgba(131, 131, 131, 0.63);
+}
+.prod-title h5:after{
+    content: '';
+    width: 80%;
+    left: 2%;
+    top: 130%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(255, 0, 119);
+}
+.prod-spec h2{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.prod-spec span{
+    font-size: 12px;
+    color: grey;
+}
+.prod-spec h2[class="last-h2"]:after{
+    content: '';
+    width: 80%;
+    left: 2%;
+    top: 130%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(255, 0, 119);
+}
+.prod-price{
+    justify-content: space-around;
+}
+.dollar-price{
+    display: flex;
+}
+.dollar-price h5{
+    font-size: 30px;
+}
+.dollar-price h1{
+    font-size: 50px;
+}
+.buy-button{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 0, 128);
+    width: 30%;
+    height: 30%;
+    padding: 10px;
+    align-items: center;
+    transform: scale(1);
+    transition: 0.3s;
+    border-radius: 40px;
+}
+.buy-button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 /**/
 .boxes h1{
-    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100px;
     width: 100%;
+    font-size: 20px;
     text-align: center;
-    font-size: 30px;
-    font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(29, 29, 29, 0.438);
     padding: 5px;
     cursor: pointer;
 }
