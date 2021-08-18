@@ -769,7 +769,12 @@ footer{
     height: 30rem;
 }
 #foot-proj{
+    flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    height: 5rem;
+    margin-top: 20px;
+    background-color: black;
 }
 .f-title, .f-desc{
     position: relative;
@@ -826,7 +831,7 @@ footer{
     transition: 0.3s;
 }
 .f-desc h5:hover{
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     transform: translateX(10px);
     transition: 0.5s;
