@@ -5,7 +5,16 @@
     color: white;
     font-family: 'Poppins', sans-serif;
 }
-
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.514);
+}
 /* header*/
 header{
     width: 100%;
@@ -16,7 +25,6 @@ header{
 }
 .containers{
     width: 100%;
-    background: rgba(0, 0, 0, 0.377);
 }
 
 .navbar{
@@ -54,7 +62,7 @@ nav ul li a[id="mission-hover"]::after{
     left: 0;
     z-index: -1;
     font-size: 120px;
-    color: rgba(20, 20, 20, 0.8);
+    color: rgba(32, 32, 32, 0.8);
     transition: 0.5s;
 }
 nav ul li a[id="contact-hover"]::after{
@@ -67,7 +75,7 @@ nav ul li a[id="contact-hover"]::after{
     left: 0;
     z-index: -1;
     font-size: 120px;
-    color: rgba(20, 20, 20, 0.8);
+    color: rgba(32, 32, 32, 0.8);
     transition: 0.5s;
 }
 nav ul li a[id="product-hover"]::after{
@@ -81,7 +89,7 @@ nav ul li a[id="product-hover"]::after{
     z-index: -1;
     font-size: 120px;
     transition: 0.5s;
-    color: rgba(20, 20, 20, 0.8);
+    color: rgba(32, 32, 32, 0.8);
 }
 nav ul li a[id="team-hover"]::after{
     position: absolute;
@@ -94,7 +102,7 @@ nav ul li a[id="team-hover"]::after{
     z-index: -1;
     font-size: 120px;
     transition: 0.7s;
-    color: rgba(20, 20, 20, 0.8);
+    color: rgba(32, 32, 32, 0.8);
 }
 nav ul li a:hover::after{
     top: 40%;
@@ -544,7 +552,7 @@ img{
 
 /*contact section*/
 #contact{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -644,69 +652,182 @@ img{
 
 
 /*contact form*/
-.container .contact-form{
-    width: 40%;
-    height: 90%;
-    padding: 40px;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-}
-.contact-form form h2{
+.row h2{
     font-size: 30px;
     color: black;
 }
-.contact-form form .input-container{
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
+.contact-form{
+    display: flex;
+    width: 40%;
+    height: 90%;
 }
-.input-container span{
-    color: black;
+form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.container-form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.container-form .row{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+}
+
+.row span{
     position: absolute;
+    color: black;
+    pointer-events: none;
     left: 0;
     width: 100%;
-    margin: 10px 0;
-    padding: 5px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: rgb(255, 0, 119);
+    transition: 0.3s;
 }
-.input-container input, .input-container textarea{
-    outline: none;
-    resize: none;
-    width: 100%;
-    margin: 10px 0;
-    padding: 5px 0;
-    font-size: 16px;
-    border: none;
+.row input, .row textarea{
     color: black;
-    border-bottom: 1.5px solid black;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    border-bottom: 2px solid black;
 }
-
-.input-container input:focus ~ span,
-.input-container input:valid ~ span,
-.input-container textarea:focus ~ span,
-.input-container textarea:valid ~ span
-{
-    color: rgb(231, 22, 92);
-    transition: 0.5s;
-    font-size: 12px;
+.row textarea{
+    resize: none;
+}
+.row input:focus ~ span,
+.row textarea:focus ~ span,
+.row input:valid ~ span,
+.row textarea:valid ~ span{
+    color: red;
+    transition: 0.3s;
     transform: translateY(-20px);
 }
-
-.input-container input[type="submit"]{
-    width: 100px;
+#submit-button-form input{
     border: none;
+    color: white;
+    z-index: 6;
     cursor: pointer;
-    border-radius: 40px;
-    padding: 10px;
-    font-size: 20px;
-    background-color: rgb(253, 0, 127);
-    transition: 0.3s;
-}
-.input-container input[type="submit"]:hover{
-    background-color: rgb(17, 198, 230);
-    transform: scale(1.1);
-    transition: 0.3s;
+    background: transparent;
 }
 
+#submit-button-form{
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    justify-content: center;
+    border: none;
+    height: 40px;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    width: 20%;
+}
+#submit-button-form:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    border-radius: 40px;
+    bottom: 0;
+    opacity: 0;
+    height: 40px;
+    background-color: rgb(255, 0, 85);
+    transition: 0.5s all ease;
+}
+#submit-button-form:hover:before{
+    opacity: 1;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+}
+.foot-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+#main-container{
+    margin-top: 10px;
+    height: 30rem;
+}
+#foot-proj{
+    justify-content: center;
+}
+.f-title, .f-desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.company, .help, .socmed{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.f-title h2{
+    margin-bottom: 5px;
+}
+.f-title h2::after{
+    content: '';
+    height: 2px;
+    background-color: rgb(253, 0, 118);
+    position: absolute;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+}
+.f-desc h5{
+    color: grey;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.f-desc ul li{
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.f-desc ul li a,
+.f-desc ul li i{
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.f-desc ul li a:hover {
+    background-color: white;
+    color: rgb(255, 0, 76);
+    transition: 0.3s;
+}
+.f-desc ul li i:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+.f-desc h5:hover{
+    font-size: 18px;
+    color: white;
+    transform: translateX(10px);
+    transition: 0.5s;
+}
