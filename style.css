@@ -832,7 +832,8 @@ form{
     color: white;
     border-radius: 40px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    bottom: 10%;
     width: 20%;
 }
 #submit-button-form:before{
