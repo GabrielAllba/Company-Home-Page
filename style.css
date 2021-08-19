@@ -987,14 +987,15 @@ footer{
     .navbar{
         background-color: black;
         display: flex;
-        width: fit-content;
+        width: 4rem;
+        height: 4rem;
         align-items: center;
         padding-bottom: 0px;
-        justify-content: flex-start;
+        justify-content: center;
     }
     #headlines{
         margin: 10px;
-        font-size: 10px;
+        font-size: 25px;
         cursor: pointer;
     }
     .description{
