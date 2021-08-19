@@ -155,7 +155,7 @@ nav{
 #mission{
     justify-content: space-between;
     position: relative;
-    background-image: url(./images/fixbg.jpg);
+    background-image: url(./images/mission-bg/our-mission-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,7 +243,7 @@ nav{
     align-items: center;
     justify-content: center;
     grid-area: project;
-    background-image: url(./images/backgr.jpg);
+    background-image: url(./images/mission-bg/mission-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -262,39 +262,39 @@ nav{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./images/car-5.jpg);
+    background-image: url(./images/car/red-clas-car.jpg);
 }
 #project-2{
     grid-area: project-2;
-    background-image: url(./images/car-2.jpg);
+    background-image: url(./images/car/grey-car.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #project-3{
     grid-area: project-3;
-    background-image: url(./images/car-4.jpg);
+    background-image: url(./images/car/yellow-car.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #project-4{
     grid-area: project-4;
-    background-image: url(./images/car-3.jpg);
+    background-image: url(./images/car/black-car.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #project-5{
     grid-area: project-5;
-    background-image: url(./images/car-1.jpg);
+    background-image: url(./images/car/white-car.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #project-6{
     grid-area: project-6;
-    background-image: url(./images/car-6.jpg);
+    background-image: url(./images/car/red-car-two.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -343,22 +343,22 @@ nav{
     filter: blur(5px);
 }
 #blur-red{
-    background-image: url(./images/red-car/blur-bg-red.jpg);
+    background-image: url(./images/car/red-background-blur.jpg);
 }
 #blur-grey{
-    background-image: url(./images/car-2.jpg);
+    background-image: url(./images/car/grey-car.jpg);
 }
 #blur-yellow{
-    background-image: url(./images/car-4.jpg);
+    background-image: url(./images/car/yellow-car.jpg);
 }
 #blur-black{
-    background-image: url(./images/car-3.jpg);
+    background-image: url(./images/car/black-car.jpg);
 }
 #blur-white{
     background-image: url(./images/car-1.jpg);
 }
 #blur-red-two{
-    background-image: url(./images/red-car/blur-bg-red.jpg);
+    background-image: url(./images/car/red-background-blur.jpg);
 }
 .content{
     display: flex;
@@ -666,7 +666,7 @@ img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(./images/contact.jpg);
+    background-image: url(/images/contact\ -background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
@@ -959,7 +959,7 @@ footer{
     }
     
     .tittle{
-        background-image: url(./images/fixbg.jpg);
+        background-image: url(./images/mission-bg/our-mission-bg.jpg);
         background-position: center;
         background-repeat: none;
         background-size: cover;
