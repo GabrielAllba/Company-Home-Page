@@ -882,7 +882,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    height: 5rem;
+    height: 100%;
     margin-top: 20px;
     background-color: black;
 }
