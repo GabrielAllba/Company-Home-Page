@@ -870,6 +870,7 @@ footer{
     flex-direction: column;
 }
 .foot-container{
+    background-color: rgb(31, 31, 31);
     display: flex;
     justify-content: space-around;
     height: 100%;
