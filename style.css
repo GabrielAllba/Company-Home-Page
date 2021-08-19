@@ -1106,6 +1106,56 @@ footer{
     .introduction .job h4{
         font-size: 16px;
     }
+    nav ul li{
+        position: relative;
+    }
+    
+    nav ul li a[id="mission-hover"]::after{
+        position: absolute;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        opacity: 0;
+        content: '' ;
+        background-color: rgb(255, 0, 106);
+    }
+    
+    nav ul li a[id="contact-hover"]::after{
+        position: absolute;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        opacity: 0;
+        content: '' ;
+        background-color: rgb(255, 0, 106);
+    }
+    nav ul li a[id="product-hover"]::after{
+        position: absolute;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        opacity: 0;
+        content: '' ;
+        background-color: rgb(255, 0, 106);
+    }
+    nav ul li a[id="team-hover"]::after{
+        position: absolute;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        opacity: 0;
+        content: '' ;
+        background-color: rgb(255, 0, 106);
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+        opacity: 1;
+        top: 100%;
+    }
     #contact{
         display: none;
     }
