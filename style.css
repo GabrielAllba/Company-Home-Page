@@ -5,6 +5,9 @@
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 ::-webkit-scrollbar{
     width: 20px;
 }
@@ -146,6 +149,7 @@ nav{
 }
 .container{
     display: flex;
+    width: 100%;
 }
 /*mission section*/
 #mission{
@@ -941,4 +945,175 @@ footer{
     color: white;
     transform: translateX(10px);
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 800px){
+    /*mission section*/
+    #mission{
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: 100vh;
+        background: none;
+    }
+    
+    .tittle{
+        background-image: url(./images/fixbg.jpg);
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        flex-direction: column;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+        height: 40%;
+        padding-bottom: 20px;
+        display: flex;
+    }
+    .tittle h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 15px;
+        color: rgb(255, 255, 255);
+        
+    }
+    .logo{
+        display: none;
+    }
+    .navbar{
+        background-color: black;
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        padding-bottom: 0px;
+        justify-content: flex-start;
+    }
+    #headlines{
+        margin: 10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .description{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        background-color: white;
+    }
+    .inner{
+        display: flex;
+        width: 100%;
+        height:50%;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        margin-top: 0;
+        background-color: rgb(255, 255, 255);    }
+    .inner h3{
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+    .inner p{
+        color: black;
+        margin-top: 20px;
+        width: 90%;
+        font-size: 14px;
+        text-align: justify;
+        max-width: 100%;
+        max-height: 80%;
+        padding-bottom: 20px;
+    }
+
+
+    /*project*/
+    #portfolio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, minmax(300px, 300px));
+        grid-template-areas: 
+        "project project"
+        "project-1 project-2"
+        "project-3 project-4"    
+        "project-5 project-6"        
+        ;
+    }
+
+    /*team*/
+    #banner-title{
+        display: flex;
+        padding: 10px;
+    }
+    #banner-title h1{
+        text-align: center;
+    }
+    #team .grid-container{
+        grid-template-rows: repeat(2, minmax(100px, 100px));
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    #banner-title{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        grid-area: 1 / 2 / 3 / 5;
+    }
+    #banner-desc{
+        display: none;
+    }
+
+    .flex-inner{
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    #flex-outer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-box ul{
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        opacity: 1;
+    }
+    .image-box:hover img{
+        transform: scale(1);
+    }
+    .image-box:hover ul{
+        height: 100%;
+        opacity: 1;
+        transition: 0.3s;
+    }
+   
+    .person{
+        max-width: 70%;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction .name h4, 
+    .introduction .job h4{
+        font-size: 16px;
+    }
+    #contact{
+        display: none;
+    }
+    .f-title{
+        display: none;
+    }
+    .foot-container{
+        padding: 20px;
+        justify-content: space-evenly;
+    }
 }
