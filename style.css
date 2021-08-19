@@ -253,6 +253,7 @@ nav{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 50px;
+    text-align: center;
 }
 
 #project-1{
@@ -870,6 +871,7 @@ footer{
     flex-direction: column;
 }
 .foot-container{
+    background-color: rgb(31, 31, 31);
     display: flex;
     justify-content: space-around;
     height: 100%;
