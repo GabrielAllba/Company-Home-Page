@@ -1166,7 +1166,13 @@ footer{
         padding: 20px;
         justify-content: space-evenly;
     }
-
+    .boxes{
+        height: 20%;
+        bottom: 0;
+        align-items: center;
+        opacity: 1;
+        transition: 0.3s;
+    }
     /*popup*/
     .content{
         width: 100%;
