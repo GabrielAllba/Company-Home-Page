@@ -666,7 +666,7 @@ img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(/images/contact-background.jpg);
+    background-image: url(./images/contact-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;   
